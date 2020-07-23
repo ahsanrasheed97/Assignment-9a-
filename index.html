@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To do app</title>
+</head>
+<body>
+    <h1>To Do List</h1>
+    <style>
+        body {
+            
+        font-weight: bold;
+            color: whitesmoke;
+            background-color: rgb(128,128,128)
+;
+            text-align: center;
+        }
+        .btn { 
+            margin:5px;
+            background-color: whitesmoke;
+        }
+        .btn:hover{
+            background-color:  rgb(128,128,128);
+            color: whitesmoke;
+        }
+        .inp{
+            
+            box-sizing: border-box;
+            border: transparent;
+            background-color: whitesmoke;
+        }
+       
+    </style>
+    <body>
+        <div>
+            <input class="inp" placeholder="Enter todo" type="text" id="todo-item">
+            <button class="btn" onclick="addTodo()">ADD ITEM</button>
+            <button class="btn" onclick="deleteAll()">DELETE ALL</button>
+        </div>
+    
+        <div >
+            <ul id="list">
+              
+            </ul>
+        </div>
+    
+        <script src="app.js"></script>
+    
+
+</body>
+</html>
